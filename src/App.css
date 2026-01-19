@@ -1,0 +1,178 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.add-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.add-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.add-form button:hover {
+  background-color: #45a049;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.post-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.post-content h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.post-content p {
+  margin: 0 0 15px 0;
+  color: #666;
+  line-height: 1.4;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.post-actions button:first-child {
+  background-color: #2196F3;
+  color: white;
+}
+
+.post-actions button:first-child:hover {
+  background-color: #1976D2;
+}
+
+.post-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.post-actions button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.edit-form input:focus {
+  outline: none;
+  border-color: #2196F3;
+}
+
+.edit-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-form button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-form button:first-child:hover {
+  background-color: #45a049;
+}
+
+.edit-form button:last-child {
+  background-color: #9E9E9E;
+  color: white;
+}
+
+.edit-form button:last-child:hover {
+  background-color: #757575;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .add-form {
+    flex-direction: column;
+  }
+
+  .add-form input {
+    min-width: auto;
+  }
+
+  .post-actions {
+    flex-direction: column;
+  }
+
+  .edit-form {
+    flex-direction: column;
+  }
+}
